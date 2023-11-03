@@ -30,172 +30,181 @@ namespace TestTask
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            dataGridView1 = new DataGridView();
-            employeeBindingSource = new BindingSource(components);
-            button1 = new Button();
-            button2 = new Button();
-            Filter = new ComboBox();
-            FilterText = new Label();
-            RefreshBtn = new Button();
-            employeeBindingSource1 = new BindingSource(components);
-            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            firstNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            surNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            positionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            yearOfBirthDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            salaryDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)employeeBindingSource).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)employeeBindingSource1).BeginInit();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btCreate = new System.Windows.Forms.Button();
+            this.btDelete = new System.Windows.Forms.Button();
+            this.Filter = new System.Windows.Forms.ComboBox();
+            this.FilterText = new System.Windows.Forms.Label();
+            this.RefreshBtn = new System.Windows.Forms.Button();
+            this.employeeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).BeginInit();
+            this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, firstNameDataGridViewTextBoxColumn, surNameDataGridViewTextBoxColumn, positionDataGridViewTextBoxColumn, yearOfBirthDataGridViewTextBoxColumn, salaryDataGridViewTextBoxColumn });
-            dataGridView1.DataSource = employeeBindingSource;
-            dataGridView1.Location = new Point(12, 95);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(805, 311);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // employeeBindingSource
-            // 
-            employeeBindingSource.DataSource = typeof(Employee);
-            // 
-            // button1
-            // 
-            button1.Location = new Point(837, 114);
-            button1.Name = "button1";
-            button1.Size = new Size(141, 50);
-            button1.TabIndex = 1;
-            button1.Text = "Добавить";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(837, 205);
-            button2.Name = "button2";
-            button2.Size = new Size(141, 50);
-            button2.TabIndex = 2;
-            button2.Text = "Удалить";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // Filter
-            // 
-            Filter.FormattingEnabled = true;
-            Filter.Items.AddRange(new object[] { "All", "Junior", "SuperJunior", "Senior", "SEO" });
-            Filter.Location = new Point(154, 31);
-            Filter.Name = "Filter";
-            Filter.Size = new Size(151, 28);
-            Filter.TabIndex = 3;
-            Filter.SelectedIndexChanged += Filter_SelectedIndexChanged;
-            Filter.SelectionChangeCommitted += Filter_SelectionChangeCommitted;
-            // 
-            // FilterText
-            // 
-            FilterText.AutoSize = true;
-            FilterText.Location = new Point(47, 34);
-            FilterText.Name = "FilterText";
-            FilterText.Size = new Size(42, 20);
-            FilterText.TabIndex = 4;
-            FilterText.Text = "Filter";
-            // 
-            // RefreshBtn
-            // 
-            RefreshBtn.Location = new Point(385, 36);
-            RefreshBtn.Name = "RefreshBtn";
-            RefreshBtn.Size = new Size(94, 29);
-            RefreshBtn.TabIndex = 5;
-            RefreshBtn.Text = "Refresh";
-            RefreshBtn.UseVisualStyleBackColor = true;
-            // 
-            // employeeBindingSource1
-            // 
-            employeeBindingSource1.DataSource = typeof(Employee);
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.surNameDataGridViewTextBoxColumn,
+            this.positionDataGridViewTextBoxColumn,
+            this.yearOfBirthDataGridViewTextBoxColumn,
+            this.salaryDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.employeeBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 95);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(805, 311);
+            this.dataGridView1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
             // 
-            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            idDataGridViewTextBoxColumn.HeaderText = "Id";
-            idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            idDataGridViewTextBoxColumn.Width = 125;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
-            firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            firstNameDataGridViewTextBoxColumn.Width = 125;
+            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            this.firstNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // surNameDataGridViewTextBoxColumn
             // 
-            surNameDataGridViewTextBoxColumn.DataPropertyName = "SurName";
-            surNameDataGridViewTextBoxColumn.HeaderText = "SurName";
-            surNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            surNameDataGridViewTextBoxColumn.Name = "surNameDataGridViewTextBoxColumn";
-            surNameDataGridViewTextBoxColumn.Width = 125;
+            this.surNameDataGridViewTextBoxColumn.DataPropertyName = "SurName";
+            this.surNameDataGridViewTextBoxColumn.HeaderText = "SurName";
+            this.surNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.surNameDataGridViewTextBoxColumn.Name = "surNameDataGridViewTextBoxColumn";
+            this.surNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // positionDataGridViewTextBoxColumn
             // 
-            positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
-            positionDataGridViewTextBoxColumn.HeaderText = "Position";
-            positionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            positionDataGridViewTextBoxColumn.Width = 125;
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
+            this.positionDataGridViewTextBoxColumn.HeaderText = "Position";
+            this.positionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            this.positionDataGridViewTextBoxColumn.Width = 125;
             // 
             // yearOfBirthDataGridViewTextBoxColumn
             // 
-            yearOfBirthDataGridViewTextBoxColumn.DataPropertyName = "YearOfBirth";
-            yearOfBirthDataGridViewTextBoxColumn.HeaderText = "YearOfBirth";
-            yearOfBirthDataGridViewTextBoxColumn.MinimumWidth = 6;
-            yearOfBirthDataGridViewTextBoxColumn.Name = "yearOfBirthDataGridViewTextBoxColumn";
-            yearOfBirthDataGridViewTextBoxColumn.Width = 125;
+            this.yearOfBirthDataGridViewTextBoxColumn.DataPropertyName = "YearOfBirth";
+            this.yearOfBirthDataGridViewTextBoxColumn.HeaderText = "YearOfBirth";
+            this.yearOfBirthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearOfBirthDataGridViewTextBoxColumn.Name = "yearOfBirthDataGridViewTextBoxColumn";
+            this.yearOfBirthDataGridViewTextBoxColumn.Width = 125;
             // 
             // salaryDataGridViewTextBoxColumn
             // 
-            salaryDataGridViewTextBoxColumn.DataPropertyName = "Salary";
-            salaryDataGridViewTextBoxColumn.HeaderText = "Salary";
-            salaryDataGridViewTextBoxColumn.MinimumWidth = 6;
-            salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
-            salaryDataGridViewTextBoxColumn.Width = 125;
+            this.salaryDataGridViewTextBoxColumn.DataPropertyName = "Salary";
+            this.salaryDataGridViewTextBoxColumn.HeaderText = "Salary";
+            this.salaryDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
+            this.salaryDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(TestTask.Models.Employee);
+            // 
+            // btCreate
+            // 
+            this.btCreate.Location = new System.Drawing.Point(837, 95);
+            this.btCreate.Name = "btCreate";
+            this.btCreate.Size = new System.Drawing.Size(141, 50);
+            this.btCreate.TabIndex = 1;
+            this.btCreate.Text = "Добавить";
+            this.btCreate.UseVisualStyleBackColor = true;
+            this.btCreate.Click += new System.EventHandler(this.btCreate_Click);
+            // 
+            // btDelete
+            // 
+            this.btDelete.Location = new System.Drawing.Point(837, 151);
+            this.btDelete.Name = "btDelete";
+            this.btDelete.Size = new System.Drawing.Size(141, 50);
+            this.btDelete.TabIndex = 2;
+            this.btDelete.Text = "Удалить";
+            this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
+            // 
+            // Filter
+            // 
+            this.Filter.FormattingEnabled = true;
+            this.Filter.Items.AddRange(new object[] {
+            "All",
+            "Junior",
+            "SuperJunior",
+            "Senior",
+            "SEO"});
+            this.Filter.Location = new System.Drawing.Point(154, 31);
+            this.Filter.Name = "Filter";
+            this.Filter.Size = new System.Drawing.Size(151, 28);
+            this.Filter.TabIndex = 3;
+            // 
+            // FilterText
+            // 
+            this.FilterText.AutoSize = true;
+            this.FilterText.Location = new System.Drawing.Point(47, 34);
+            this.FilterText.Name = "FilterText";
+            this.FilterText.Size = new System.Drawing.Size(42, 20);
+            this.FilterText.TabIndex = 4;
+            this.FilterText.Text = "Filter";
+            // 
+            // RefreshBtn
+            // 
+            this.RefreshBtn.Location = new System.Drawing.Point(321, 31);
+            this.RefreshBtn.Name = "RefreshBtn";
+            this.RefreshBtn.Size = new System.Drawing.Size(94, 29);
+            this.RefreshBtn.TabIndex = 5;
+            this.RefreshBtn.Text = "Refresh";
+            this.RefreshBtn.UseVisualStyleBackColor = true;
+            // 
+            // employeeBindingSource1
+            // 
+            this.employeeBindingSource1.DataSource = typeof(TestTask.Models.Employee);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 450);
-            Controls.Add(RefreshBtn);
-            Controls.Add(FilterText);
-            Controls.Add(Filter);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)employeeBindingSource).EndInit();
-            ((System.ComponentModel.ISupportInitialize)employeeBindingSource1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.Controls.Add(this.RefreshBtn);
+            this.Controls.Add(this.FilterText);
+            this.Controls.Add(this.Filter);
+            this.Controls.Add(this.btDelete);
+            this.Controls.Add(this.btCreate);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button1;
+        private Button btCreate;
         private BindingSource employeeBindingSource;
-        private Button button2;
+        private Button btDelete;
         private ComboBox Filter;
         private Label FilterText;
         private Button RefreshBtn;

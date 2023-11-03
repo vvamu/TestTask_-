@@ -6,12 +6,13 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestTask.Models;
 
 namespace TestTask.Persistence
 {
     public class DbContext
     {
-        private static string _connection = "Server=localhost;Database=TestDB;Trusted_Connection=True;TrustServerCertificate=True";
+        private static string _connection = "Server=den1.mssql7.gear.host;Database=dbtest29;User Id=dbtest29;Password=Hy1KTb_c5_47;TrustServerCertificate=True";
         private static SqlConnection _dbConnection;
         public DbContext()
         {

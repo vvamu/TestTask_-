@@ -13,24 +13,14 @@ namespace TestTask
         public List<Employee> Employees = new List<Employee>();
         public DataTable Table;
         public DbContext Context = new DbContext();
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Employees = Context.GetAllEmployees();
-            employeeBindingSource.DataSource = Employees;
-        }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btCreate_Click(object sender, EventArgs e)
         {
             var createForm = new CreateEmployee();
             createForm.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btDelete_Click(object sender, EventArgs e)
         {
             if (this.dataGridView1.SelectedRows.Count > 0)
             {
@@ -42,10 +32,10 @@ namespace TestTask
                 }
             }
         }
-        private void RefreshTable()
-        {
-            FilterTable();
-        }
+        //private void RefreshTable()
+        //{
+        //    FilterTable();
+        //}
         private void Filter_SelectedIndexChanged(object sender, EventArgs e)
         {
             //FilterTable();
@@ -68,6 +58,13 @@ namespace TestTask
         private void Filter_SelectionChangeCommitted(object sender, EventArgs e)
         {
             FilterTable();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            Employees = Context.GetAllEmployees();
+            employeeBindingSource.DataSource = Employees;
+            Filter.SelectedIndex = 0;
         }
     }
 }

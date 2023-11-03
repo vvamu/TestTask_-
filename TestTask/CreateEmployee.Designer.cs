@@ -28,143 +28,159 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            Fname = new TextBox();
-            Sname = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
-            Year = new TextBox();
-            label4 = new Label();
-            Salary = new TextBox();
-            label5 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            Position = new ComboBox();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Fname = new System.Windows.Forms.TextBox();
+            this.Sname = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Year = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Salary = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btCloseForm = new System.Windows.Forms.Button();
+            this.btCreateForm = new System.Windows.Forms.Button();
+            this.Position = new System.Windows.Forms.ComboBox();
+            this.labelErrors = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(43, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(39, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Имя";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(43, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Имя";
             // 
             // Fname
             // 
-            Fname.Location = new Point(12, 83);
-            Fname.Name = "Fname";
-            Fname.Size = new Size(125, 27);
-            Fname.TabIndex = 1;
+            this.Fname.Location = new System.Drawing.Point(12, 83);
+            this.Fname.Name = "Fname";
+            this.Fname.Size = new System.Drawing.Size(125, 27);
+            this.Fname.TabIndex = 1;
             // 
             // Sname
             // 
-            Sname.Location = new Point(153, 83);
-            Sname.Name = "Sname";
-            Sname.Size = new Size(125, 27);
-            Sname.TabIndex = 3;
+            this.Sname.Location = new System.Drawing.Point(153, 83);
+            this.Sname.Name = "Sname";
+            this.Sname.Size = new System.Drawing.Size(125, 27);
+            this.Sname.TabIndex = 3;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(184, 28);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Фамилия";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(184, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Фамилия";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(313, 28);
-            label3.Name = "label3";
-            label3.Size = new Size(86, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Должность";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(313, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Должность";
             // 
             // Year
             // 
-            Year.Location = new Point(428, 83);
-            Year.Name = "Year";
-            Year.Size = new Size(125, 27);
-            Year.TabIndex = 7;
+            this.Year.Location = new System.Drawing.Point(428, 83);
+            this.Year.Name = "Year";
+            this.Year.Size = new System.Drawing.Size(125, 27);
+            this.Year.TabIndex = 7;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(436, 28);
-            label4.Name = "label4";
-            label4.Size = new Size(108, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Год рождения";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(436, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Год рождения";
             // 
             // Salary
             // 
-            Salary.Location = new Point(572, 83);
-            Salary.Name = "Salary";
-            Salary.Size = new Size(125, 27);
-            Salary.TabIndex = 9;
+            this.Salary.Location = new System.Drawing.Point(572, 83);
+            this.Salary.Name = "Salary";
+            this.Salary.Size = new System.Drawing.Size(125, 27);
+            this.Salary.TabIndex = 9;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(580, 28);
-            label5.Name = "label5";
-            label5.Size = new Size(107, 20);
-            label5.TabIndex = 8;
-            label5.Text = "Зарплата (в $)";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(580, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Зарплата (в $)";
             // 
-            // button1
+            // btCloseForm
             // 
-            button1.Location = new Point(211, 144);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 10;
-            button1.Text = "Отмена";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.btCloseForm.Location = new System.Drawing.Point(12, 144);
+            this.btCloseForm.Name = "btCloseForm";
+            this.btCloseForm.Size = new System.Drawing.Size(94, 29);
+            this.btCloseForm.TabIndex = 10;
+            this.btCloseForm.Text = "Отмена";
+            this.btCloseForm.UseVisualStyleBackColor = true;
+            this.btCloseForm.Click += new System.EventHandler(this.btCloseForm_Click);
             // 
-            // button2
+            // btCreateForm
             // 
-            button2.Location = new Point(357, 144);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 11;
-            button2.Text = "Создать";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.btCreateForm.Location = new System.Drawing.Point(112, 145);
+            this.btCreateForm.Name = "btCreateForm";
+            this.btCreateForm.Size = new System.Drawing.Size(94, 29);
+            this.btCreateForm.TabIndex = 11;
+            this.btCreateForm.Text = "Создать";
+            this.btCreateForm.UseVisualStyleBackColor = true;
+            this.btCreateForm.Click += new System.EventHandler(this.btCreateForm_Click);
             // 
             // Position
             // 
-            Position.FormattingEnabled = true;
-            Position.Items.AddRange(new object[] { "Junior", "SuperJunior", "Senior", "SEO" });
-            Position.Location = new Point(284, 82);
-            Position.Name = "Position";
-            Position.Size = new Size(138, 28);
-            Position.TabIndex = 12;
+            this.Position.FormattingEnabled = true;
+            this.Position.Items.AddRange(new object[] {
+            "Junior",
+            "SuperJunior",
+            "Senior",
+            "SEO"});
+            this.Position.Location = new System.Drawing.Point(284, 82);
+            this.Position.Name = "Position";
+            this.Position.Size = new System.Drawing.Size(138, 28);
+            this.Position.TabIndex = 12;
+            // 
+            // labelErrors
+            // 
+            this.labelErrors.AutoSize = true;
+            this.labelErrors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labelErrors.Location = new System.Drawing.Point(212, 149);
+            this.labelErrors.Name = "labelErrors";
+            this.labelErrors.Size = new System.Drawing.Size(0, 20);
+            this.labelErrors.TabIndex = 13;
             // 
             // CreateEmployee
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(726, 194);
-            Controls.Add(Position);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(Salary);
-            Controls.Add(label5);
-            Controls.Add(Year);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(Sname);
-            Controls.Add(label2);
-            Controls.Add(Fname);
-            Controls.Add(label1);
-            Name = "CreateEmployee";
-            Text = "CreateEmployee";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(726, 194);
+            this.Controls.Add(this.labelErrors);
+            this.Controls.Add(this.Position);
+            this.Controls.Add(this.btCreateForm);
+            this.Controls.Add(this.btCloseForm);
+            this.Controls.Add(this.Salary);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Year);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Sname);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Fname);
+            this.Controls.Add(this.label1);
+            this.Name = "CreateEmployee";
+            this.Text = "CreateEmployee";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -178,8 +194,9 @@
         private Label label4;
         private TextBox Salary;
         private Label label5;
-        private Button button1;
-        private Button button2;
+        private Button btCloseForm;
+        private Button btCreateForm;
         private ComboBox Position;
+        private Label labelErrors;
     }
 }
